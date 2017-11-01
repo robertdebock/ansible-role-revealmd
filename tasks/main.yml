@@ -1,0 +1,11 @@
+---
+# tasks file for revealmd
+- name: install revealmd
+  npm:
+    name: reveal-md
+    global: yes
+
+- name: start revealmd
+  shell: nohup reveal-md /data/index.md &
+  async: 3
+  poll: 0
