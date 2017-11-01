@@ -6,6 +6,7 @@
     global: yes
 
 - name: start revealmd
-  shell: nohup reveal-md /data/index.md &
+  shell: nohup reveal-md index.md &
+  chdir: /data
   async: 3
   poll: 0
