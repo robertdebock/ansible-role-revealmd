@@ -7,6 +7,7 @@
 
 - name: start revealmd
   shell: nohup reveal-md index.md &
-  chdir: /data
   async: 3
   poll: 0
+  args:
+    chdir: /data
