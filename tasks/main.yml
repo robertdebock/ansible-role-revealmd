@@ -11,3 +11,8 @@
   poll: 0
   args:
     chdir: "{{ directory }}"
+  register: shell
+  
+- name: show all variables
+  debug:
+    var: shell
