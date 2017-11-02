@@ -10,4 +10,4 @@
   async: 3
   poll: 0
   args:
-    chdir: /data
+    chdir: "{{ directory }}"
