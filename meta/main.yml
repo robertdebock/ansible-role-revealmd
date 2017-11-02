@@ -10,6 +10,9 @@ galaxy_info:
     versions:
     - 6
     - 7
+  - name: Fedora
+    - 25
+    - 26
 
   galaxy_tags:
     - revealmd
