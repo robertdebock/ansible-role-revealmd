@@ -13,6 +13,6 @@
     chdir: "{{ directory }}"
   register: shell
 
-- name: show all variables
+- name: show shell variable
   debug:
-    var: hostvars[inventory_hostname]
+    var: shell
