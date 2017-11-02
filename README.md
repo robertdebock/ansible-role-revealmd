@@ -11,16 +11,24 @@ The package manager from nodejs (NPM) should be installed. robertdebock.npm can 
 Role Variables
 --------------
 
-None known.
+The variable directory can be set to something else than the default "/data".
+
+```
+---
+- hosts: servers
+  become: yes
+  roles:
+    - { role: revealmd, directory: /other/directory }
+```
 
 Dependencies
 ------------
 
-robertdebock.npm
+The nodejs NPM package manager must be available, this roll can help:
+- robertdebock.npm
 
 Example Playbook
 ----------------
-
 
 ```
 ---
