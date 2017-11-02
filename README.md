@@ -24,7 +24,6 @@ The variable directory can be set to something else than the default "/data".
 Dependencies
 ------------
 
-The nodejs NPM package manager must be available, this roll can help:
 - robertdebock.npm
 
 Example Playbook
