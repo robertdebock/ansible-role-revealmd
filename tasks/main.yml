@@ -6,7 +6,7 @@
     global: yes
 
 - name: start revealmd
-  shell: nohup reveal-md index.md &
+  shell: nohup reveal-md index.md {{ options }} &
   async: 3
   poll: 0
   args:
