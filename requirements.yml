@@ -1,2 +1,4 @@
 - name: robertdebock.npm
   src: robertdebock.npm
+- name: robertdebock.git
+  src: robertdebock.git
