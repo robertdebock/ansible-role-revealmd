@@ -6,8 +6,14 @@
     global: yes
 
 - name: start revealmd
-  shell: reveal-md --port {{ port }} {{ options }} &
-  async: 3
+  shell: ( reveal-md --port {{ port }} {{ options }} & ) ; touch /tmp/revealmd-started
+  async: 5
   poll: 0
   args:
     chdir: "{{ directory }}"
+    creates: /tmp/revealmd-started
+  register: started
+
+- name: show variables
+  debug:
+    var: started
