@@ -1,5 +1,12 @@
 ---
 - hosts: localhost
   remote_user: root
+
   roles:
     - revealmd
+
+  tasks:
+    - name: test if port is open
+  wait_for:
+    port: "{{ port }}"
+    delay: 5

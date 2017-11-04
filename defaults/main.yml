@@ -1,3 +1,5 @@
 ---
 # defaults file for revealmd
 directory: /data
+options: --theme black
+port: --port 1948
