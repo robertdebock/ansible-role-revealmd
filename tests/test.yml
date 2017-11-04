@@ -7,6 +7,6 @@
 
   tasks:
     - name: test if port is open
-  wait_for:
-    port: "{{ port }}"
-    delay: 5
+      wait_for:
+        port: "{{ port }}"
+        delay: 5
