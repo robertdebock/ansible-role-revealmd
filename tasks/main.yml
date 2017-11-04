@@ -6,7 +6,7 @@
     global: yes
 
 - name: start revealmd
-  shell: reveal-md {{ port }} {{ options }} &
+  shell: reveal-md --port {{ port }} {{ options }} &
   async: 3
   poll: 0
   args:
