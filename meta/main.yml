@@ -28,6 +28,7 @@ galaxy_info:
   galaxy_tags:
     - revealmd
     - nodejs
+    - git
     - npm
     - slides
     - alpine
@@ -38,3 +39,4 @@ galaxy_info:
 
 dependencies:
   - robertdebock.npm
+  - robertdebock.git
