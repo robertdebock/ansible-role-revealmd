@@ -1,4 +1,4 @@
-Role Name
+revealmd
 =========
 
 Have revealmd available.
@@ -18,7 +18,7 @@ The variable directory can be set to something else than the default "/data".
 - hosts: servers
   become: yes
   roles:
-    - { role: revealmd, directory: /other/directory }
+    - { role: revealmd, directory: /other/directory, options: theme: solarized }
 ```
 
 Dependencies
