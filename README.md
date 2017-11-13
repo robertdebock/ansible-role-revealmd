@@ -1,25 +1,19 @@
 revealmd
 =========
 
-Have revealmd available.
+Have revealmd available on your system.
 
 Requirements
 ------------
 
-The package manager from nodejs (NPM) should be installed. robertdebock.npm can be used for that.
+Access to a repository containing packages, likely on the internet.
 
 Role Variables
 --------------
 
-The variable directory can be set to something else than the default "/data".
-
-```
----
-- hosts: servers
-  become: yes
-  roles:
-    - { role: revealmd, directory: /other/directory, options: theme: solarized }
-```
+directory - the location where revealmd will look for .md files, defaults to /data.
+options - the extra options that you'd want revealmd to start with, defaults to none.
+port - the TCP to listen to, defaults to 1948.
 
 Dependencies
 ------------
@@ -30,11 +24,21 @@ Example Playbook
 ----------------
 
 ```
+```
 ---
 - hosts: servers
   become: yes
+
   roles:
-    - revealmd
+    - role: revealmd
+      directory: /other/directory
+      options: theme: solarized
+
+  tasks:
+    - name: place content
+      copy:
+        src: files/index.md
+        dest: /other/directory/index.md
 ```
 
 License

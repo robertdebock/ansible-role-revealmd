@@ -1,5 +1,5 @@
 ---
-# tasks file for revealmd
+# tasks file for ansible-role-revealmd
 - name: install revealmd
   npm:
     name: reveal-md
@@ -18,4 +18,3 @@
     chdir: "{{ directory }}"
     creates: /tmp/revealmd-started
   register: started
-

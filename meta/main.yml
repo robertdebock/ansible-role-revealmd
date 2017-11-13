@@ -25,15 +25,19 @@ galaxy_info:
 
   galaxy_tags:
     - revealmd
+    - presentation
+    - html
+    - markdown
     - nodejs
     - git
     - npm
     - slides
-    - alpine
-    - debian
-    - epel
-    - fedora
-    - ubuntu
+    - Alpine
+    - CentOS
+    - Debian
+    - Fedora
+    - RHEL
+    - Ubuntu
 
 dependencies:
   - robertdebock.npm
