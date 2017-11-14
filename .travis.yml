@@ -4,7 +4,6 @@ language: python
 services: docker
 
 env:
-  - distro: alpine:3.5
   - distro: centos:7
   - distro: debian:stretch
   - distro: fedora:25
