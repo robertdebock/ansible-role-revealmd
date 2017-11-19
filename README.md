@@ -1,4 +1,4 @@
-revealmd
+ansible-role-revealmd
 =========
 
 Have revealmd available on your system.
@@ -18,12 +18,12 @@ port - the TCP to listen to, defaults to 1948.
 Dependencies
 ------------
 
-- robertdebock.npm
+- robertdebock.ansible-role-npm
+- robertdebock.ansible-role-git
 
 Example Playbook
 ----------------
 
-```
 ```
 ---
 - hosts: servers

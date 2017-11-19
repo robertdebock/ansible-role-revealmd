@@ -36,5 +36,5 @@ galaxy_info:
     - Ubuntu
 
 dependencies:
-  - robertdebock.npm
-  - robertdebock.git
+  - robertdebock.ansible-role-npm
+  - robertdebock.ansible-role-git
