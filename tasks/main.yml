@@ -11,7 +11,7 @@
     state: directory
 
 - name: start revealmd
-  shell: ( reveal-md --port {{ appport }} {{ options }} & ) ; touch /tmp/revealmd-started
+  shell: touch /tmp/revealmd-started ; reveal-md --port {{ appport }} {{ options }} &
   async: 5
   poll: 0
   args:
