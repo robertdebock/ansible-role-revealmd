@@ -4,6 +4,7 @@
 
   roles:
     - role: ansible-role-revealmd
+      port: {{ 65536 |random(start=1025) }}
 
   tasks:
     - name: test if port is open
