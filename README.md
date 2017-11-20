@@ -13,7 +13,7 @@ Role Variables
 
 directory - the location where revealmd will look for .md files, defaults to /data.
 options - the extra options that you'd want revealmd to start with, defaults to none.
-port - the TCP to listen to, defaults to 1948.
+appport - the TCP to listen to, defaults to 1948.
 
 Dependencies
 ------------
@@ -33,6 +33,7 @@ Example Playbook
     - role: revealmd
       directory: /other/directory
       options: theme: solarized
+      appport: 8080
 
   tasks:
     - name: place content
