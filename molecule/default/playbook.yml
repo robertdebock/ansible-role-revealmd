@@ -5,11 +5,3 @@
   roles:
     - role: ansible-role-revealmd
       appport: "{{ 65536 |random(start=1025) }}"
-
-  tasks:
-    - name: test if port is open
-      wait_for:
-        host: "{{ inventory_hostname }}"
-        port: "{{ appport }}"
-        delay: 5
-        timeout: 30
