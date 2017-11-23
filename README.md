@@ -1,6 +1,8 @@
 ansible-role-revealmd
 =========
 
+[![Build Status](https://travis-ci.org/robertdebock/ansible-role-revealmd.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-revealmd)
+
 Have revealmd available on your system.
 
 Requirements
