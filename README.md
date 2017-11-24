@@ -23,6 +23,11 @@ Dependencies
 - robertdebock.ansible-role-npm
 - robertdebock.ansible-role-git
 
+Download the dependencies by issueing this command:
+```
+ansible-galaxy install --role-file requirements.yml
+```
+
 Example Playbook
 ----------------
 
@@ -32,7 +37,7 @@ Example Playbook
   become: yes
 
   roles:
-    - role: revealmd
+    - role: ansible-role-revealmd
       directory: /other/directory
       options: theme: solarized
       appport: 8080
