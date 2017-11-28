@@ -23,7 +23,7 @@ Dependencies
 - robertdebock.ansible-role-npm
 - robertdebock.ansible-role-git
 
-Download the dependencies by issueing this command:
+Download the dependencies by issuing this command:
 ```
 ansible-galaxy install --role-file requirements.yml
 ```
