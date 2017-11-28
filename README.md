@@ -37,7 +37,7 @@ Example Playbook
   become: yes
 
   roles:
-    - role: ansible-role-revealmd
+    - role: robertdebock.ansible-role-revealmd
       directory: /other/directory
       options: theme: solarized
       appport: 8080
@@ -48,6 +48,9 @@ Example Playbook
         src: files/index.md
         dest: /other/directory/index.md
 ```
+
+Install this role using `galaxy install robertdebock.ansible-role-nginx`.
+
 
 License
 -------
