@@ -49,7 +49,7 @@ Example Playbook
         dest: /other/directory/index.md
 ```
 
-Install this role using `galaxy install robertdebock.ansible-role-nginx`.
+Install this role using `galaxy install robertdebock.ansible-role-revealmd`.
 
 
 License
