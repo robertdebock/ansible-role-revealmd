@@ -1,5 +1,5 @@
 ---
-- name: robertdebock.ansible-role-npm
-  src: robertdebock.ansible-role-npm
-- name: robertdebock.ansible-role-git
-  src: robertdebock.ansible-role-git
+- name: robertdebock.npm
+  src: robertdebock.npm
+- name: robertdebock.git
+  src: robertdebock.git

@@ -1,5 +1,5 @@
 ---
-# defaults file for ansible-role-revealmd
+# defaults file for revealmd
 directory: /data
 appport: 1948
 options: --theme black

@@ -1,7 +1,7 @@
-ansible-role-revealmd
+revealmd
 =========
 
-[![Build Status](https://travis-ci.org/robertdebock/ansible-role-revealmd.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-revealmd)
+[![Build Status](https://travis-ci.org/robertdebock.ansible-role-revealmd.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-revealmd)
 
 Have revealmd available on your system.
 
@@ -20,8 +20,8 @@ appport - the TCP to listen to, defaults to 1948.
 Dependencies
 ------------
 
-- robertdebock.ansible-role-npm
-- robertdebock.ansible-role-git
+- robertdebock.npm
+- robertdebock.git
 
 Download the dependencies by issuing this command:
 ```
@@ -37,7 +37,7 @@ Example Playbook
   become: yes
 
   roles:
-    - role: robertdebock.ansible-role-revealmd
+    - role: robertdebock.revealmd
       directory: /other/directory
       options: theme: solarized
       appport: 8080
@@ -49,7 +49,7 @@ Example Playbook
         dest: /other/directory/index.md
 ```
 
-Install this role using `galaxy install robertdebock.ansible-role-revealmd`.
+Install this role using `galaxy install robertdebock.revealmd`.
 
 
 License
