@@ -3,5 +3,5 @@
   hosts: all
 
   roles:
-    - role: revealmd
+    - role: ansible-role-revealmd
       appport: "{{ 65536 |random(start=1025) }}"
