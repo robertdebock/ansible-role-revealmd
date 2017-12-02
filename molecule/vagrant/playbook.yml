@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+
+  roles:
+    - role: ansible-role-revealmd
+      appport: "{{ 65536 |random(start=1025) }}"
