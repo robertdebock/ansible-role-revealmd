@@ -7,11 +7,11 @@
 
 - name: create directory
   file:
-    path: "{{ directory }}"
+    path: "{{ revealmd_directory }}"
     state: directory
 
 - name: start revealmd
-  shell: touch revealmd-started ; reveal-md --port {{ appport }} {{ options }} &
+  shell: touch revealmd-started ; reveal-md --port {{ revealmd_port }} {{ revealmd_options }} &
   args:
-    chdir: "{{ directory }}"
+    chdir: "{{ revealmd_directory }}"
     creates: revealmd-started

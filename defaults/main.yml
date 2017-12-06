@@ -1,5 +1,5 @@
 ---
 # defaults file for revealmd
-directory: /data
-appport: 1948
-options: --theme black
+revealmd_directory: /data
+revealmd_port: 1948
+revealmd_options: --theme black

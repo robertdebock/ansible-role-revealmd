@@ -6,4 +6,4 @@
 
   roles:
     - role: ansible-role-revealmd
-      appport: "{{ 65536 |random(start=1025) }}"
+      revealmd_port: "{{ 65536 |random(start=1025) }}"

@@ -13,9 +13,9 @@ Access to a repository containing packages, likely on the internet.
 Role Variables
 --------------
 
-directory - the location where revealmd will look for .md files, defaults to /data.
-options - the extra options that you'd want revealmd to start with, defaults to none.
-appport - the TCP to listen to, defaults to 1948.
+revealmd_directory - the location where revealmd will look for .md files, defaults to /data.
+revealmd_options - the extra options that you'd want revealmd to start with, defaults to none.
+revealmd_port - the TCP to listen to, defaults to 1948.
 
 Dependencies
 ------------
