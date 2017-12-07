@@ -1,5 +1,11 @@
 ---
 # tasks file for revealmd
+- name: install dependencies
+  package:
+    name: "{{ item }}"
+  with_items:
+    - git
+
 - name: install revealmd
   npm:
     name: reveal-md
