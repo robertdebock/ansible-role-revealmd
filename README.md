@@ -21,7 +21,6 @@ Dependencies
 ------------
 
 - robertdebock.npm
-- robertdebock.git
 
 Download the dependencies by issuing this command:
 ```
