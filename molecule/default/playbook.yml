@@ -4,5 +4,5 @@
   gather_facts: no
 
   roles:
-    - role: robertdebock.revealmd
+    - role: ansible-role-revealmd
       revealmd_port: "{{ 65536 |random(start=1025) }}"
