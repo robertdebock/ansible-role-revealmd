@@ -14,8 +14,6 @@ platforms:
     image: alpine:3.6
   - name: revealmd-alpine-3.7
     image: alpine:3.7
-  - name: revealmd-centos-6
-    image: centos:6
   - name: revealmd-centos-7
     image: centos:7
   - name: revealmd-debian-jessie
@@ -32,9 +30,6 @@ platforms:
     image: opensuse:42.2
   - name: revealmd-opensuse-42.3
     image: opensuse:42.3
-    # 14.04 LTS
-  - name: revealmd-ubuntu-trusty
-    image: ubuntu:trusty
     # 16.04 LTS
   - name: revealmd-ubuntu-xenial
     image: ubuntu:xenial
