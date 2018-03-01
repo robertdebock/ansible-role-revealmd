@@ -18,10 +18,6 @@ platforms:
     image: centos:7
   - name: revealmd-debian-jessie
     image: debian:jessie
-  - name: revealmd-debian-stretch
-    image: debian:stretch
-  - name: revealmd-debian-buster
-    image: debian:buster
   - name: revealmd-fedora-26
     image: fedora:26
   - name: revealmd-fedora-27
