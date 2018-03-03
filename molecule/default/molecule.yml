@@ -16,8 +16,6 @@ platforms:
     image: alpine:3.7
   - name: revealmd-centos-7
     image: centos:7
-  - name: revealmd-debian-jessie
-    image: debian:jessie
   - name: revealmd-fedora-26
     image: fedora:26
   - name: revealmd-fedora-27
