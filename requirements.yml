@@ -1,3 +1,4 @@
 ---
-- name: robertdebock.npm
-  src: robertdebock.npm
+- robertdebock.bootstrap
+- robertdebock.epel
+- robertdebock.npm

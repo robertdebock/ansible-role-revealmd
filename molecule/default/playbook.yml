@@ -5,5 +5,8 @@
   strategy: free
 
   roles:
+    - role: robertdebock.bootstrap
+    - role: robertdebock.epel
+    - role: robertdebock.npm
     - role: ansible-role-revealmd
       revealmd_port: "{{ 65536 |random(start=1025) }}"

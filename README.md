@@ -8,7 +8,8 @@ Have revealmd available on your system.
 Requirements
 ------------
 
-Access to a repository containing packages, likely on the internet.
+- Access to a repository containing packages, likely on the internet.
+- Have NPM installed.
 
 Role Variables
 --------------
@@ -20,6 +21,10 @@ revealmd_port - the TCP to listen to, defaults to 1948.
 Dependencies
 ------------
 
+These implicit dependencies can help you get your system into the right state.
+
+- robertdebock.bootstrap
+- robertdebock.epel
 - robertdebock.npm
 
 Download the dependencies by issuing this command:
@@ -36,6 +41,9 @@ Example Playbook
   become: yes
 
   roles:
+    - role: robertdebock.bootstrap
+    - role: robertdebock.epel
+    - role: robertdebock.npm
     - role: robertdebock.revealmd
       directory: /other/directory
       options: theme: solarized
