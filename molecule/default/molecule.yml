@@ -24,12 +24,10 @@ platforms:
     image: opensuse:42.2
   - name: revealmd-opensuse-42.3
     image: opensuse:42.3
-    # 16.04 LTS
-  - name: revealmd-ubuntu-xenial
-    image: ubuntu:xenial
-    # 17.04
   - name: revealmd-ubuntu-artful
     image: ubuntu:artful
+  - name: revealmd-ubuntu-bionic
+    image: ubuntu:bionic
 provisioner:
   name: ansible
   lint:
