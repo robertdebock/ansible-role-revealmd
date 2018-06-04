@@ -30,9 +30,9 @@ Dependencies
 
 These implicit dependencies can help you get your system into the right state.
 
-- robertdebock.bootstrap
-- robertdebock.epel
-- robertdebock.npm
+- [robertdebock.bootstrap](https://travis-ci.org/robertdebock/ansible-role-bootstrap)
+- [robertdebock.epel](https://travis-ci.org/robertdebock/ansible-role-epel)
+- [robertdebock.npm](https://travis-ci.org/robertdebock/ansible-role-npm)
 
 Download the dependencies by issuing this command:
 ```
