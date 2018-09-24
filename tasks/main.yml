@@ -3,12 +3,14 @@
 - name: install dependencies
   package:
     name: "{{ item }}"
+    state: present
   with_items:
     - git
 
 - name: install revealmd
   npm:
     name: reveal-md
+    state: present
     global: yes
 
 - name: create directory
