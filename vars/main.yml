@@ -1,0 +1,4 @@
+---
+# vars file for revealmd
+revealmd_dependencies:
+  - git

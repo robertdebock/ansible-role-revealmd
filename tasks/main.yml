@@ -2,15 +2,13 @@
 # tasks file for revealmd
 - name: install dependencies
   package:
-    name: "{{ item }}"
+    name: "{{ revealmd_dependencies }}"
     state: present
-  with_items:
-    - git
 
 - name: install revealmd
   npm:
     name: reveal-md
-    state: present
+    state: "{{ revealmd_package_state }}"
     global: yes
 
 - name: create directory
