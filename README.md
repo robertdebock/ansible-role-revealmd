@@ -5,6 +5,98 @@ revealmd
 
 Have revealmd available on your system.
 
+
+Example Playbook
+----------------
+
+This example is taken from `molecule/default/playbook.yml`:
+```
+---
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: false
+
+  roles:
+    - robertdebock.bootstrap
+    - robertdebock.epel
+    - robertdebock.revealmd
+
+```
+
+Role Variables
+--------------
+
+These variables are set in `defaults/main.yml`:
+```
+---
+# defaults file for revealmd
+
+# The directory where reveal-md should find presentations.
+revealmd_directory: /data
+
+# The tcp port where reveal-md should listen on.
+revealmd_port: 1948
+
+# The theme to use.
+revealmd_options: --theme black
+
+# To update all packages installed by this roles, set `revealmd_package_state` to `latest`.
+revealmd_package_state: present
+
+```
+
+Requirements
+------------
+
+- Access to a repository containing packages, likely on the internet.
+- A recent version of Ansible. (Tests run on the last 3 release of Ansible.)
+
+The following roles can be installed to ensure all requirements are met, using `ansible-galaxy install -r requirements.yml`:
+
+---
+- robertdebock.bootstrap
+- robertdebock.epel
+- robertdebock.npm
+
+
+Context
+-------
+
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
+
+Here is an overview of related roles:
+![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/revealmd.png "Dependency")
+
+
+Compatibility
+-------------
+
+This role has been tested against the following distributions and Ansible version:
+
+|distribution|ansible 2.4|ansible 2.5|ansible 2.6|ansible 2.7|ansible devel|
+|------------|-----------|-----------|-----------|-----------|-------------|
+|alpine-edge*|yes|yes|yes|yes|yes*|
+|alpine-latest|yes|yes|yes|yes|yes*|
+|archlinux|yes|yes|yes|yes|yes*|
+|centos-6|yes|yes|yes|yes|yes*|
+|centos-latest|yes|yes|yes|yes|yes*|
+|debian-latest|yes|yes|yes|yes|yes*|
+|debian-stable|yes|yes|yes|yes|yes*|
+|debian-unstable*|yes|yes|yes|yes|yes*|
+|fedora-latest|yes|yes|yes|yes|yes*|
+|fedora-rawhide*|yes|yes|yes|yes|yes*|
+|opensuse-leap|yes|yes|yes|yes|yes*|
+|opensuse-tumbleweed|no|no|no|no|no*|
+|ubuntu-artful|yes|yes|yes|yes|yes*|
+|ubuntu-devel*|yes|yes|yes|yes|yes*|
+|ubuntu-latest|yes|yes|yes|yes|yes*|
+
+A single star means the build may fail, it's marked as an experimental build.
+
+Testing
+-------
+
 [Unit tests](https://travis-ci.org/robertdebock/ansible-role-revealmd) are done on every commit and periodically.
 
 If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-revealmd/issues)
@@ -14,94 +106,14 @@ To test this role locally please use [Molecule](https://github.com/metacloud/mol
 pip install molecule
 molecule test
 ```
-There are many scenarios available, please have a look in the `molecule/` directory.
-
-Context
---------
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
-
-Here is an overview of related roles:
-![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/revealmd.png "Dependency")
-
-Requirements
-------------
-
-- Access to a repository containing packages, likely on the internet.
-- Have NPM installed.
-
-Role Variables
---------------
-
-revealmd_directory - the location where revealmd will look for .md files, defaults to /data.
-revealmd_options - the extra options that you'd want revealmd to start with, defaults to none.
-revealmd_port - the TCP to listen to, defaults to 1948.
-
-Dependencies
-------------
-
-These implicit dependencies can help you get your system into the right state.
-
-- [robertdebock.bootstrap](https://travis-ci.org/robertdebock/ansible-role-bootstrap)
-- [robertdebock.epel](https://travis-ci.org/robertdebock/ansible-role-epel)
-- [robertdebock.npm](https://travis-ci.org/robertdebock/ansible-role-npm)
-
-Download the dependencies by issuing this command:
-```
-ansible-galaxy install --role-file requirements.yml
-```
-
-Compatibility
--------------
-
-This role has been tested against the following distributions and Ansible version:
-
-|distribution|ansible 2.4|ansible 2.5|ansible 2.6|
-|------------|-----------|-----------|-----------|
-|alpine-edge|yes|yes|yes|
-|alpine-latest|yes|yes|yes|
-|archlinux|yes|yes|yes|
-|centos-6|no|no|no|
-|centos-latest|yes|yes|yes|
-|debian-latest|no|no|no|
-|debian-stable|no|no|no|
-|fedora-latest|yes|yes|yes|
-|fedora-rawhide|no|no|no|
-|opensuse-leap|yes|yes|yes|
-|opensuse-tumbleweed|no|no|no|
-|ubuntu-artful|yes|yes|yes|
-|ubuntu-latest|yes|yes|yes|
-
-Example Playbook
-----------------
-
-```
----
-- hosts: servers
-  become: yes
-
-  roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.epel
-    - role: robertdebock.npm
-    - role: robertdebock.revealmd
-      directory: /other/directory
-      options: theme: solarized
-      appport: 8080
-
-  tasks:
-    - name: place content
-      copy:
-        src: files/index.md
-        dest: /other/directory/index.md
-```
-
-Install this role using `galaxy install robertdebock.revealmd`.
+There are many specific scenarios available, please have a look in the `molecule/` directory.
 
 
 License
 -------
 
-Apache License, Version 2.0
+Apache-2.0
+
 
 Author Information
 ------------------
