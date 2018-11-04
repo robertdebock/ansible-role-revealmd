@@ -17,7 +17,7 @@
     state: directory
 
 - name: start revealmd
-  shell: touch revealmd-started ; reveal-md --port {{ revealmd_port }} {{ revealmd_options }} &
+  shell: "touch revealmd-started ; reveal-md --port {{ revealmd_port }} {{ revealmd_options }} &"
   args:
     chdir: "{{ revealmd_directory }}"
     creates: revealmd-started
