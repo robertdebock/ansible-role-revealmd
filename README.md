@@ -3,8 +3,7 @@ revealmd
 
 [![Build Status](https://travis-ci.org/robertdebock/ansible-role-revealmd.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-revealmd)
 
-Have revealmd available on your system.
-
+The purpose of this role is to install and configure revealmd on your system.
 
 Example Playbook
 ----------------
