@@ -4,12 +4,18 @@
   package:
     name: "{{ revealmd_dependencies }}"
     state: present
+  register: revealmd_install_dependencies
+  until: revealmd_install_dependencies
+  retries: 3
 
 - name: install revealmd
   npm:
     name: reveal-md
     state: "{{ revealmd_package_state }}"
     global: yes
+  register: revealmd_install_revealmd
+  until: revealmd_install_revealmd
+  retries: 3
 
 - name: create directory
   file:
