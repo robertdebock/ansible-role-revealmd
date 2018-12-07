@@ -7,4 +7,5 @@
   roles:
     - robertdebock.bootstrap
     - robertdebock.epel
+    - robertdebock.git
     - ansible-role-revealmd

@@ -1,13 +1,5 @@
 ---
 # tasks file for revealmd
-- name: install dependencies
-  package:
-    name: "{{ revealmd_dependencies }}"
-    state: present
-  register: revealmd_install_dependencies
-  until: revealmd_install_dependencies
-  retries: 3
-
 - name: install revealmd
   npm:
     name: reveal-md
