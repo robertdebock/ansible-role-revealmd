@@ -34,8 +34,10 @@ platforms:
     image: opensuse:leap
   - name: revealmd-opensuse-tumbleweed
     image: opensuse:tumbleweed
-  - name: revealmd-ubuntu-artful
-    image: ubuntu:artful
+  - name: revealmd-ubuntu-latest
+    image: ubuntu:latest
+  - name: revealmd-ubuntu-rolling
+    image: ubuntu:rolling
   - name: revealmd-ubuntu-devel
     image: ubuntu:devel
   - name: revealmd-ubuntu-latest
