@@ -32,8 +32,6 @@ platforms:
     image: fedora:rawhide
   - name: revealmd-opensuse-leap
     image: opensuse:leap
-  - name: revealmd-opensuse-tumbleweed
-    image: opensuse:tumbleweed
   - name: revealmd-ubuntu-latest
     image: ubuntu:latest
   - name: revealmd-ubuntu-rolling
