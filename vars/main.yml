@@ -1,2 +1,8 @@
 ---
 # vars file for revealmd
+
+service_list:
+  - name: revealmd
+    description: Markdown presentor
+    start_command: "/usr/bin/reveal-md --port {{ revealmd_port }} {{ revealmd_options | default(omit) }} {{ revealmd_presentation }}"
+    working_directory: "{{ revealmd_directory }}"

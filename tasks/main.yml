@@ -14,8 +14,17 @@
     path: "{{ revealmd_directory }}"
     state: directory
 
-- name: start revealmd
-  shell: "touch revealmd-started ; reveal-md --port {{ revealmd_port }} {{ revealmd_options }} &"
-  args:
-    chdir: "{{ revealmd_directory }}"
-    creates: revealmd-started
+- name: place index.md default presentation
+  copy:
+    src: index.md
+    dest: "{{ revealmd_directory }}/index.md"
+
+- name: create revealmd service
+  import_role:
+    name: robertdebock.service
+
+- name: start and enable revealmd
+  service:
+    name: revealmd
+    state: started
+    enabled: yes

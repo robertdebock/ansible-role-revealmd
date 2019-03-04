@@ -46,6 +46,9 @@ provisioner:
     host_vars:
       revealmd-fedora-rawhide:
         ansible_python_interpreter: /usr/bin/python3
+    group_vars:
+      all:
+        service_ignore_docker: no
   lint:
     name: ansible-lint
   config_options:
