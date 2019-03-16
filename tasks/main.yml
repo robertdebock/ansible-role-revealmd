@@ -3,7 +3,7 @@
 - name: install revealmd
   npm:
     name: reveal-md
-    state: "{{ revealmd_package_state }}"
+    state: present
     global: yes
   register: revealmd_install_revealmd
   until: revealmd_install_revealmd
