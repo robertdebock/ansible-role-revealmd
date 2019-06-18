@@ -6,7 +6,7 @@
     state: present
     global: yes
   register: revealmd_install_revealmd
-  until: revealmd_install_revealmd
+  until: revealmd_install_revealmd is succeeded
   retries: 3
 
 - name: create directory
