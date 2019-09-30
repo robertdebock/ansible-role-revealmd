@@ -1,6 +1,5 @@
 ---
 # vars file for revealmd
-
 service_list:
   - name: revealmd
     description: Markdown presentor
