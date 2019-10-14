@@ -6,8 +6,8 @@ revealmd
 
 Install and configure revealmd on your system.
 
-<img src="https://img.shields.io/ansible/role/d/"/>
-<img src="https://img.shields.io/ansible/quality/"/>
+<img src="https://img.shields.io/ansible/role/d/21646"/>
+<img src="https://img.shields.io/ansible/quality/21646"/>
 
 Example Playbook
 ----------------
