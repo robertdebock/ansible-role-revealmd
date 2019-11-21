@@ -40,7 +40,6 @@ galaxy_info:
     - slides
     - centos
     - rhel
-    - ubuntu
 
 dependencies:
   - robertdebock.npm
