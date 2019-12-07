@@ -39,7 +39,7 @@ galaxy_info:
     - npm
     - slides
     - centos
-    - rhel
+    - redhat
 
 dependencies:
   - robertdebock.npm
