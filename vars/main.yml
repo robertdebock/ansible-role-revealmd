@@ -1,7 +1,15 @@
 ---
 # vars file for revealmd
+_revealmd_path:
+  default: /usr/bin
+  Fedora: /usr/local/bin
+  Suse: /usr/local/bin
+  Ubuntu: /usr/local/bin
+
+revealmd_path: "{{ _revealmd_path[ansible_distribution] | default(_revealmd_path['default']) }}"
+
 service_list:
   - name: revealmd
     description: Markdown presentor
-    start_command: "/usr/local/bin/reveal-md --port {{ revealmd_port }} {{ revealmd_options | default(omit) }} {{ revealmd_presentation }}"
+    start_command: "{{ revealmd_path }}/reveal-md --port {{ revealmd_port }} {{ revealmd_options | default(omit) }} {{ revealmd_presentation }}"
     working_directory: "{{ revealmd_directory }}"
