@@ -2,7 +2,7 @@ revealmd
 =========
 
 <img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/>
-<a href="https://travis-ci.org/robertdebock/ansible-role-revealmd"> <img src="https://travis-ci.org/robertdebock/ansible-role-revealmd.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/21646"/> <img src="https://img.shields.io/ansible/quality/21646"/>
+<a href="https://travis-ci.org/robertdebock/ansible-role-revealmd"> <img src="https://travis-ci.org/robertdebock/ansible-role-revealmd.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/"/> <img src="https://img.shields.io/ansible/quality/"/>
 
 Install and configure revealmd on your system.
 
@@ -96,7 +96,7 @@ This role has been tested on these [container images](https://hub.docker.com/):
 |---------|----|
 |alpine|all|
 |archlinux|all|
-|el|7, 8|
+|el|8|
 |fedora|all|
 |opensuse|all|
 |ubuntu|artful, bionic|
@@ -107,6 +107,15 @@ The minimum version of Ansible required is 2.8 but tests have been done to:
 - The current version.
 - The development version.
 
+Exceptions
+----------
+
+Some variarations of the build matrix do not work. These are the variations and reasons why the build won't work:
+
+| variation                 | reason                 |
+|---------------------------|------------------------|
+| centos:7 | /usr/lib/node_modules/reveal-md/bin/reveal-md.js:29 (async () => { |
+| redhat:7 | /usr/lib/node_modules/reveal-md/bin/reveal-md.js:29 (async () => { |
 
 
 Testing
