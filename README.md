@@ -2,7 +2,9 @@ revealmd
 =========
 
 <img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/>
-<a href="https://travis-ci.org/robertdebock/ansible-role-revealmd"> <img src="https://travis-ci.org/robertdebock/ansible-role-revealmd.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/"/> <img src="https://img.shields.io/ansible/quality/"/>
+<a href="https://travis-ci.org/robertdebock/ansible-role-revealmd"> <img src="https://travis-ci.org/robertdebock/ansible-role-revealmd.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/21646"/> <img src="https://img.shields.io/ansible/quality/21646"/>
+
+<a href="https://github.com/robertdebock/ansible-role-revealmd/actions"><img src="https://github.com/robertdebock/ansible-role-revealmd/workflows/GitHub%20Action/badge.svg"/></a>
 
 Install and configure revealmd on your system.
 
@@ -95,7 +97,6 @@ This role has been tested on these [container images](https://hub.docker.com/):
 |container|tags|
 |---------|----|
 |alpine|all|
-|archlinux|all|
 |el|8|
 |fedora|all|
 |opensuse|all|
