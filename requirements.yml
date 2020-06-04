@@ -1,6 +1,6 @@
 ---
 - robertdebock.bootstrap
 - robertdebock.epel
-- robertdebock.npm
 - robertdebock.git
+- robertdebock.npm
 - robertdebock.service
