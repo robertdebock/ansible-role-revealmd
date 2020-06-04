@@ -2,9 +2,9 @@
 
 Install and configure revealmd on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-revealmd.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-revealmd)|[![github](https://github.com/robertdebock/ansible-role-revealmd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-revealmd/actions)|[![quality](https://img.shields.io/ansible/quality/21646)](https://galaxy.ansible.com/robertdebock/revealmd)|[![downloads](https://img.shields.io/ansible/role/d/21646)](https://galaxy.ansible.com/robertdebock/revealmd)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-revealmd.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-revealmd)|[![github](https://github.com/robertdebock/ansible-role-revealmd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-revealmd/actions)|[![quality](https://img.shields.io/ansible/quality/21646)](https://galaxy.ansible.com/robertdebock/revealmd)|[![downloads](https://img.shields.io/ansible/role/d/21646)](https://galaxy.ansible.com/robertdebock/revealmd)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-revealmd.svg)](https://github.com/robertdebock/ansible-role-revealmd/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -81,8 +81,8 @@ The following roles can be installed to ensure all requirements are met, using `
 ---
 - robertdebock.bootstrap
 - robertdebock.epel
-- robertdebock.npm
 - robertdebock.git
+- robertdebock.npm
 - robertdebock.service
 
 ```
