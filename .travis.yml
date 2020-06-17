@@ -20,7 +20,6 @@ env:
     - image="fedora" tag="latest"
     - image="opensuse" tag="latest"
     - image="ubuntu" tag="latest"
-    - image="ubuntu" tag="bionic"
 
 cache:
   - pip
