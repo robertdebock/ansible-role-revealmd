@@ -1,0 +1,26 @@
+---
+- name: test if revealmd_directory is set correctly
+  assert:
+    that:
+      - revealmd_directory is defined
+      - revealmd_directory | length > 0
+
+- name: test if revealmd_presentation is set correctly
+  assert:
+    that:
+      - revealmd_presentation is defined
+      - revealmd_presentation | length > 0
+
+- name: test if revealmd_port is set correctly
+  assert:
+    that:
+      - revealmd_port is defined
+      - revealmd_port | int
+      - revealmd_port | int > 0
+      - revealmd_port | int < 65536
+
+- name: test if revealmd_options is set correctly
+  assert:
+    that:
+      - revealmd_options is defined
+      - revealmd_options | length > 0
