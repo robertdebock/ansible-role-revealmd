@@ -1,5 +1,6 @@
 ---
 # vars file for revealmd
+
 _revealmd_path:
   default: /usr/bin
   Fedora: /usr/local/bin
