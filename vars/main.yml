@@ -3,11 +3,11 @@
 
 _revealmd_path:
   default: /usr/bin
-  Debian: /usr/local/bin
   RedHat: /usr/local/bin
   Suse: /usr/local/bin
+  Ubuntu: /usr/local/bin
 
-revealmd_path: "{{ _revealmd_path[ansible_os_family] | default(_revealmd_path['default']) }}"
+revealmd_path: "{{ _revealmd_path[ansible_distribution] | default(_revealmd_path[ansible_os_family] | default(_revealmd_path['default'])) }}"
 
 service_list:
   - name: revealmd
