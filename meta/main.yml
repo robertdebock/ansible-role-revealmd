@@ -20,9 +20,6 @@ galaxy_info:
     - name: OpenSUSE
       versions:
         - all
-    - name: Ubuntu
-      versions:
-        - focal
 
   galaxy_tags:
     - revealmd
