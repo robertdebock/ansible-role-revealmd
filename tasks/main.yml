@@ -13,11 +13,13 @@
   file:
     path: "{{ revealmd_directory }}"
     state: directory
+    mode: "0755"
 
 - name: place index.md default presentation
   copy:
     src: index.md
     dest: "{{ revealmd_directory }}/index.md"
+    mode: "0644"
 
 - name: create revealmd service
   import_role:
