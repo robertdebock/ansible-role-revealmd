@@ -18,9 +18,6 @@ galaxy_info:
       versions:
         - 31
         - 32
-    - name: OpenSUSE
-      versions:
-        - all
 
   galaxy_tags:
     - revealmd
