@@ -28,8 +28,6 @@ galaxy_info:
     - git
     - npm
     - slides
-    - centos
-    - redhat
 
 dependencies:
   - robertdebock.npm
