@@ -16,8 +16,7 @@ galaxy_info:
         - buster
     - name: Fedora
       versions:
-        - 31
-        - 32
+        - all
 
   galaxy_tags:
     - revealmd
