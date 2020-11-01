@@ -1,6 +1,7 @@
 ---
-- robertdebock.bootstrap
-- robertdebock.epel
-- robertdebock.git
-- robertdebock.npm
-- robertdebock.service
+roles:
+  - name: robertdebock.bootstrap
+  - name: robertdebock.epel
+  - name: robertdebock.git
+  - name: robertdebock.npm
+  - name: robertdebock.service
