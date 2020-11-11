@@ -17,7 +17,7 @@
   assert:
     that:
       - revealmd_port is defined
-      - revealmd_port | int
+      - revealmd_port is number
       - revealmd_port | int > 0
       - revealmd_port | int < 65536
     quiet: yes
