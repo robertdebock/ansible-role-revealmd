@@ -16,8 +16,8 @@
     that:
       - revealmd_port is defined
       - revealmd_port is number
-      - revealmd_port | int > 0
-      - revealmd_port | int < 65536
+      - revealmd_port > 0
+      - revealmd_port < 65536
     quiet: yes
 
 - name: test if revealmd_options is set correctly
