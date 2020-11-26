@@ -1,4 +1,5 @@
 ---
+
 - name: test if revealmd_directory is set correctly
   assert:
     that:
