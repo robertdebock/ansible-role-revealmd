@@ -4,12 +4,14 @@
   assert:
     that:
       - revealmd_directory is defined
+      - revealmd_directory is string
     quiet: yes
 
 - name: test if revealmd_presentation is set correctly
   assert:
     that:
       - revealmd_presentation is defined
+      - revealmd_presentation is string
     quiet: yes
 
 - name: test if revealmd_port is set correctly
@@ -25,4 +27,5 @@
   assert:
     that:
       - revealmd_options is defined
+      - revealmd_options is string
     quiet: yes
