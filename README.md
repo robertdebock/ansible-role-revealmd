@@ -2,9 +2,9 @@
 
 Install and configure revealmd on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-revealmd.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-revealmd)|[![github](https://github.com/robertdebock/ansible-role-revealmd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-revealmd/actions)|[![quality](https://img.shields.io/ansible/quality/21646)](https://galaxy.ansible.com/robertdebock/revealmd)|[![downloads](https://img.shields.io/ansible/role/d/21646)](https://galaxy.ansible.com/robertdebock/revealmd)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-revealmd.svg)](https://github.com/robertdebock/ansible-role-revealmd/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-revealmd.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-revealmd)|[![github](https://github.com/robertdebock/ansible-role-revealmd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-revealmd/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-revealmd/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-revealmd)|[![quality](https://img.shields.io/ansible/quality/21646)](https://galaxy.ansible.com/robertdebock/revealmd)|[![downloads](https://img.shields.io/ansible/role/d/21646)](https://galaxy.ansible.com/robertdebock/revealmd)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-revealmd.svg)](https://github.com/robertdebock/ansible-role-revealmd/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -59,10 +59,11 @@ revealmd_options: --theme black
 
 ## [Requirements](#requirements)
 
-- Access to a repository containing packages, likely on the internet.
-- A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
+- pip packages listed in [requirements.txt](https://github.com/robertdebock/ansible-role-revealmd/blob/master/requirements.txt).
 
 ## [Status of requirements](#status-of-requirements)
+
+The following roles are used to prepare a system. You may choose to prepare your system in another way, I have tested these roles as well.
 
 | Requirement | Travis | GitHub |
 |-------------|--------|--------|
