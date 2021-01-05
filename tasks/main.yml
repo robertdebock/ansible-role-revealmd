@@ -26,6 +26,12 @@
 - name: create revealmd service
   import_role:
     name: robertdebock.service
+  vars:
+    service_list:
+      - name: revealmd
+        description: Markdown presentor
+        start_command: "{{ revealmd_path }}/reveal-md --port {{ revealmd_port }} {{ revealmd_options | default(omit) }} {{ revealmd_presentation }}"
+        working_directory: "{{ revealmd_directory }}"
 
 - name: start and enable revealmd
   service:
