@@ -7,25 +7,25 @@
   delegate_to: localhost
 
 - name: install revealmd
-  npm:
+  community.general.npm:
     name: reveal-md
     state: present
     global: yes
 
 - name: create directory
-  file:
+  ansible.builtin.file:
     path: "{{ revealmd_directory }}"
     state: directory
     mode: "0755"
 
 - name: place index.md default presentation
-  copy:
+  ansible.builtin.copy:
     src: index.md
     dest: "{{ revealmd_directory }}/index.md"
     mode: "0644"
 
 - name: create revealmd service
-  import_role:
+  ansible.builtin.import_role:
     name: robertdebock.service
   vars:
     service_list:
@@ -35,7 +35,7 @@
         working_directory: "{{ revealmd_directory }}"
 
 - name: start and enable revealmd
-  service:
+  ansible.builtin.service:
     name: revealmd
     state: started
     enabled: yes
