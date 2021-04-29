@@ -21,9 +21,11 @@ molecule:
       - image: "debian"
         tag: "latest"
       - image: "fedora"
-        tag: "32"
+        tag: "33"
       - image: "fedora"
         tag: "latest"
+      - image: "fedora"
+        tag: "rawhide"
 
 galaxy:
   script:
