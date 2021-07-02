@@ -3,7 +3,8 @@
 
 _revealmd_path:
   default: /usr/bin
-  RedHat: /usr/local/bin
+  RedHat: &RHEL /usr/local/bin
+  Rocky: *RHEL
   Suse: /usr/local/bin
   Ubuntu: /usr/local/bin
 
