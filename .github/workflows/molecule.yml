@@ -30,7 +30,7 @@ jobs:
       matrix:
         config:
           - image: "debian"
-            tag: "latest"
+            tag: "bullseye"
           - image: "fedora"
             tag: "37"
           - image: "fedora"
