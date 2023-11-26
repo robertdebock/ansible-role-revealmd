@@ -1,4 +1,4 @@
-# Ansible role [revealmd](#revealmd)
+# [Ansible role revealmd](#revealmd)
 
 Install and configure revealmd on your system.
 
